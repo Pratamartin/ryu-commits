@@ -23,8 +23,8 @@ jobs:
 
       - name: Run script
         env:
-          GITHUB_TOKEN: ${{ secrets.G_TOKEN }}
-          GITHUB_USERNAME: ${{ secrets.USERNAME_G }}
+          G_TOKEN: ${{ secrets.G_TOKEN }}
+          USERNAME_G: ${{ secrets.USERNAME_G }}
         run: python scripts/generate_hadouken.py
 
       - name: Commit SVG
