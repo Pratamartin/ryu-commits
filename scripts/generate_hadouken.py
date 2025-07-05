@@ -6,8 +6,8 @@ from pathlib import Path
 
 load_dotenv(dotenv_path=Path(__file__).resolve().parents[1] / ".env")
 
-TOKEN = os.getenv("GITHUB_TOKEN")
-USERNAME = os.getenv("USERNAME_GITHUB")
+TOKEN = os.getenv("G_TOKEN")
+USERNAME = os.getenv("USERNAME_G")
 
 print("Username:", USERNAME)
 
